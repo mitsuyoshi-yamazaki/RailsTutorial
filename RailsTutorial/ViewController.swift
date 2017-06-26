@@ -11,6 +11,7 @@ import WebKit
 
 class ViewController: UIViewController {
   
+  // MARK: - Accessor
   private let webView: WKWebView = {
     
     let webView = WKWebView.init(frame: .zero, configuration: .init())
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
     return webView
   }()
   
+  // MARK: - Lifecycle
   override func loadView() {
     super.loadView()
     
@@ -32,6 +34,10 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
   }
 }
 

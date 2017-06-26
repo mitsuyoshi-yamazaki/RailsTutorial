@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     let webView = WKWebView.init(frame: .zero, configuration: .init())
     webView.allowsBackForwardNavigationGestures = false
+    webView.scrollView.isScrollEnabled = false
     
     webView.load(.init(url: Constant.cloud9URL))
     

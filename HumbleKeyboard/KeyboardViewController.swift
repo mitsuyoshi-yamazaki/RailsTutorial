@@ -11,6 +11,14 @@ import UIKit
 class KeyboardViewController: UIInputViewController {
   
   @IBOutlet var nextKeyboardButton: UIButton!
+  let keyboardView: UIView = {
+    
+    let nib = UINib(nibName: "Keyboard", bundle: nil)
+    let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    view.autoresizingMask = [ .flexibleWidth, .flexibleHeight ]
+    
+    return view
+  }()
   
   override func updateViewConstraints() {
     super.updateViewConstraints()
@@ -19,6 +27,9 @@ class KeyboardViewController: UIInputViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    print(view)
+    view.addSubview(keyboardView)
     
     // Perform custom UI setup here
     self.nextKeyboardButton = UIButton(type: .system)

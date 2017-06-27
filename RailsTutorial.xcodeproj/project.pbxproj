@@ -15,6 +15,7 @@
 		2CD038741F0155B0004234D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD038731F0155B0004234D3 /* Constants.swift */; };
 		2CD0387C1F015BFF004234D3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD0387B1F015BFF004234D3 /* KeyboardViewController.swift */; };
 		2CD038801F015BFF004234D3 /* HumbleKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CD038791F015BFF004234D3 /* HumbleKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED25D84A1F02513D00E70367 /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED25D8491F02513D00E70367 /* Keyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2CD038791F015BFF004234D3 /* HumbleKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HumbleKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD0387B1F015BFF004234D3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		2CD0387D1F015BFF004234D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED25D8491F02513D00E70367 /* Keyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				2CD0387B1F015BFF004234D3 /* KeyboardViewController.swift */,
+				ED25D8491F02513D00E70367 /* Keyboard.xib */,
 				2CD0387D1F015BFF004234D3 /* Info.plist */,
 			);
 			path = HumbleKeyboard;
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED25D84A1F02513D00E70367 /* Keyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +458,7 @@
 				2CD038831F015BFF004234D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
